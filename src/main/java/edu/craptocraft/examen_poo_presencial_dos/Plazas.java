@@ -86,5 +86,37 @@ public class Plazas {
             }
         }
     }
+
+    public void mostrarAdjudicaciones(Plazas plazaAdjudicada) {
+        if (plazaAdjudicada.getTipo().equals("D") && plazaAdjudicada.getPersona() != null) {
+            System.out.println("\n\tID Plaza: " + plazaAdjudicada.getId() + 
+                                "\n\tTipo: " + plazaAdjudicada.getTipo() + 
+                                "\n\tAdjudicada: " + plazaAdjudicada.getAdjudicada() + 
+                                "\n\tID Persona: " + plazaAdjudicada.getPersona().getId() + 
+                                "\n\tNombre: " + plazaAdjudicada.getPersona().getId() + 
+                                "\n\tPrimer apellido: " + plazaAdjudicada.getPersona().getPrimerApellido() + 
+                                "\n\tSegundo apellido: " + plazaAdjudicada.getPersona().getSegundoApellido() + 
+                                "\n\tTitulación: " + plazaAdjudicada.getPersona().getDocente().getTitulacion() + 
+                                "\n\tPuntos: " + plazaAdjudicada.getPersona().getDocente().getNumPuntos());
+        }
+
+        if (plazaAdjudicada.getTipo().equals("S") && plazaAdjudicada.getPersona() != null) {
+            System.out.println("\n\tID Plaza: " + plazaAdjudicada.getId() + 
+                                "\n\tTipo: " + plazaAdjudicada.getTipo() + 
+                                "\n\tAdjudicada: " + plazaAdjudicada.getAdjudicada() + 
+                                "\n\tID Persona: " + plazaAdjudicada.getPersona().getId() + 
+                                "\n\tNombre: " + plazaAdjudicada.getPersona().getNombre() + 
+                                "\n\tPrimer apellido: " + plazaAdjudicada.getPersona().getPrimerApellido() + 
+                                "\n\tSegundo apellido: " + plazaAdjudicada.getPersona().getSegundoApellido() + 
+                                "\n\tEspecialidad: " + plazaAdjudicada.getPersona().getSanitario().getEspacializacion() + 
+                                "\n\tDias de experiencia: " + plazaAdjudicada.getPersona().getSanitario().getNumDias());
+        }
+
+        if (plazaAdjudicada.getPersona() == null) {
+            System.out.println("\n\tID Plaza: " + plazaAdjudicada.getId() + 
+                                "\n\tTipo: " + plazaAdjudicada.getTipo() + 
+                                "\n\tAdjudicada: " + plazaAdjudicada.getAdjudicada());
+        }
+    }
     
 }
