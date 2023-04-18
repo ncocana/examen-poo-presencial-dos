@@ -1,6 +1,5 @@
 package edu.craptocraft.examen_poo_presencial_dos;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -55,27 +54,25 @@ public class Plazas {
                                         .sorted()
                                         .collect(Collectors.toList());
 
-        // Iterate through the plazas.
+        // Iterate through the sorted plazas.
         for (Plazas plaza : sortedPlazas) {
             double mejorPuntuacion = 0d;
             Persona mejorEspecialista = null;
 
             // Find the best specialist for the current plaza.
-            for (Persona persona : personasList) {
-                persona.setEspecialidad();
+            for (Persona personaFromList : personasList) {
+                personaFromList.setEspecialidad();
 
                 // Docent especialist.
-                if (persona.getEspecialidad().equals("D")) {
-                    if (persona.getDocente().getNumPuntos() > mejorPuntuacion) {
-                        mejorPuntuacion = persona.getDocente().getNumPuntos();
-                    }
+                if (personaFromList.getEspecialidad().equals("D") && (personaFromList.getDocente().getNumPuntos() > mejorPuntuacion)) {
+                        mejorPuntuacion = personaFromList.getDocente().getNumPuntos();
+                    
                 }
 
                 // Sanitary especialist.
-                if (persona.getEspecialidad().equals("S")) {
-                    if (persona.getSanitario().getNumDias() > mejorPuntuacion) {
-                        mejorPuntuacion = persona.getSanitario().getNumDias();
-                    }
+                if (personaFromList.getEspecialidad().equals("S") && (personaFromList.getSanitario().getNumDias() > mejorPuntuacion)) {
+                        mejorPuntuacion = personaFromList.getSanitario().getNumDias();
+                    
                 }
             }
 
