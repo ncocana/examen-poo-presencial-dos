@@ -1,11 +1,12 @@
-package edu.craptocraft.examen_poo_presencial_dos;
+package edu.craptocraft.examen_poo_presencial_dos.Personas;
 
-public class Sanitario {
+public class Sanitario extends Persona {
     
     private String especializacion = "";
     private int numDias = 0;
 
-    public Sanitario(String especializacion, int numDias) {
+    public Sanitario(int id, String nombre, String primerApellido, String segundoApellido, String especializacion, int numDias) {
+        super(id, nombre, primerApellido, segundoApellido);
         this.especializacion = especializacion;
         this.numDias = numDias;
     }

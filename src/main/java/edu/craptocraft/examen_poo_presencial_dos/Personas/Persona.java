@@ -1,17 +1,14 @@
-package edu.craptocraft.examen_poo_presencial_dos;
+package edu.craptocraft.examen_poo_presencial_dos.Personas;
 
-public class Persona {
+public abstract class Persona {
     
     private int id = 0;
     private String nombre = "";
     private String primerApellido = "";
     private String segundoApellido = "";
     private static int contador = 0;
-    private Docente docente = null;
-    private Sanitario sanitario = null;
-    private String especialidad = "";
 
-    public Persona(int id, String nombre, String primerApellido, String segundoApellido) {
+    protected Persona(int id, String nombre, String primerApellido, String segundoApellido) {
         this.id = id;
         this.nombre = nombre;
         this.primerApellido = primerApellido;
@@ -56,36 +53,6 @@ public class Persona {
 
     public static void setContador() {
         contador++;
-    }
-
-    public Docente getDocente() {
-        return this.docente;
-    }
-
-    public void setDocente(Docente newDocente) {
-        this.docente = newDocente;
-    }
-
-    public Sanitario getSanitario() {
-        return this.sanitario;
-    }
-
-    public void setSanitario(Sanitario newSanitario) {
-        this.sanitario = newSanitario;
-    }
-
-    public String getEspecialidad() {
-        return this.especialidad;
-    }
-
-    public void setEspecialidad() {
-        if (this.getSanitario() != null && this.getDocente() == null) {
-            this.especialidad = "S";
-        }
-
-        if (this.getSanitario() == null && this.getDocente() != null) {
-            this.especialidad = "D";
-        }
     }
 
 }
