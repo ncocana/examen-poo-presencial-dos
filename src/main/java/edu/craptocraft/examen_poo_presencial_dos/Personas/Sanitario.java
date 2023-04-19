@@ -15,7 +15,7 @@ public class Sanitario extends Persona {
         return this.especializacion;
     }
 
-    public void setEspecializacion(String newEspecializacion) {
+    private void setEspecializacion(String newEspecializacion) {
         this.especializacion = newEspecializacion;
     }
 
@@ -23,7 +23,7 @@ public class Sanitario extends Persona {
         return this.numDias;
     }
 
-    public void setNumDias(int newNumDias) {
+    private void setNumDias(int newNumDias) {
         this.numDias = newNumDias;
     }
 

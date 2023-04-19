@@ -20,7 +20,7 @@ public class Plazas {
         return this.id;
     }
 
-    public void setId(int newId) {
+    private void setId(int newId) {
         this.id = newId;
     }
 
@@ -28,7 +28,7 @@ public class Plazas {
         return this.tipo;
     }
 
-    public void setTipo(String newTipo) {
+    private void setTipo(String newTipo) {
         this.tipo = newTipo;
     }
 

@@ -19,7 +19,7 @@ public abstract class Persona {
         return this.id;
     }
 
-    public void setId(int newId) {
+    private void setId(int newId) {
         this.id = newId;
     }
 
@@ -27,7 +27,7 @@ public abstract class Persona {
         return this.nombre;
     }
 
-    public void setNombre(String newNombre) {
+    private void setNombre(String newNombre) {
         this.nombre = newNombre;
     }
 
@@ -35,7 +35,7 @@ public abstract class Persona {
         return this.primerApellido;
     }
 
-    public void setPrimerApellido(String newPrimerApellido) {
+    private void setPrimerApellido(String newPrimerApellido) {
         this.primerApellido = newPrimerApellido;
     }
 
@@ -43,7 +43,7 @@ public abstract class Persona {
         return this.segundoApellido;
     }
 
-    public void setSegundoApellido(String newSegundoApellido) {
+    private void setSegundoApellido(String newSegundoApellido) {
         this.segundoApellido = newSegundoApellido;
     }
 
@@ -51,7 +51,7 @@ public abstract class Persona {
         return contador;
     }
 
-    public static void setContador() {
+    private static void setContador() {
         contador++;
     }
 

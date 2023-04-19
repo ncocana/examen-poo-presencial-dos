@@ -15,7 +15,7 @@ public class Docente extends Persona {
         return this.titulacion;
     }
 
-    public void setTitulacion(String newTitulacion) {
+    private void setTitulacion(String newTitulacion) {
         this.titulacion = newTitulacion;
     }
 
@@ -23,7 +23,7 @@ public class Docente extends Persona {
         return this.numPuntos;
     }
 
-    public void setNumPuntos(double puntos) {
+    private void setNumPuntos(double puntos) {
         this.numPuntos += puntos;
     }
 
