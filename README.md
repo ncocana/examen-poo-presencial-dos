@@ -1,5 +1,16 @@
 # Examen POO Presencial 2 - Interinos
 
+**Tabla de contenidos**
+
+- [Examen POO Presencial 2 - Interinos](#examen-poo-presencial-2---interinos)
+  - [Introducción](#introducción)
+  - [Instrucciones](#instrucciones)
+  - [Salida de la aplicación](#salida-de-la-aplicación)
+
+## Introducción
+
+Este es un examen en Java de 2023 realizado por la clase de DAW (Presencial) de Programación en CIFP Francesc de Borja Moll. Los alumnos realizaron el examen con papel y lapiz, pero nuestro profesor nos propuso a nosotros (clase de DAW Intensivo) el reto de hacer el examen directamente con el ordenador.
+
 ## Instrucciones
 
 El Govern de les Illes Balears, nos ha pedido que implementemos un sistema para adjudicar las plazas de los interinos que forman parte tanto los docentes como los sanitarios, por tanto, nuestro sistema informático quiere tratar principalmente con información de docentes y sanitarios:   
@@ -107,3 +118,9 @@ Tipo: S
 Adjudicada: NO_ADJUDICADA
 ____________________________________________
 ```
+
+## Salida de la aplicación
+
+![Output 1](./docs/output1.png)
+![Output 2](./docs/output2.png)
+![Output 3](./docs/output3.png)
