@@ -5,6 +5,7 @@
 - [Examen POO Presencial 2 - Interinos](#examen-poo-presencial-2---interinos)
   - [Introducción](#introducción)
   - [Instrucciones](#instrucciones)
+  - [Diagrama UML](#diagrama-uml)
   - [Salida de la aplicación](#salida-de-la-aplicación)
 
 ## Introducción
@@ -119,8 +120,11 @@ Adjudicada: NO_ADJUDICADA
 ____________________________________________
 ```
 
+## Diagrama UML
+
+![Diagrama UML](./docs/diagram_uml.png)
+
 ## Salida de la aplicación
 
 ![Output 1](./docs/output1.png)
 ![Output 2](./docs/output2.png)
-![Output 3](./docs/output3.png)
